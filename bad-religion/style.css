@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    padding: 1rem;
+    min-height: 100vh;
+    background-color: #DEE0D4;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "header     header"
+    "band       empty"
+    "religion   religion";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    
+}
+
+.grid_item {
+    padding: 0.3rem;
+
+}
+
+.header {
+    grid-area: header;
+    background-color: #010101;
+    display: flex;
+    align-items: flex-end;
+
+
+}
+.band {
+    grid-area: band;
+    background-color: #F14011;
+    display: flex;
+    align-items: flex-end;
+    
+}
+.empty {
+    grid-area: empty;
+    background-color: #F14011;
+    
+}
+.religion {
+    grid-area: religion;
+    background-color: #F14011;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.white  {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.black {
+    color:black;
+    font-size: 11rem;
+    font-weight: 600;
+}
